@@ -8,10 +8,13 @@ Project Name    : webservice - OIT - job test
 require('dotenv').config();
 const express = require('express')
 const shearchMoviesRoutes = require('./routes/shearchMovieRoutes');
+//solving cors
+const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 3200;
 
+app.use(cors());
 app.use(express.json());
 app.use('/api/movies', shearchMoviesRoutes);
 
