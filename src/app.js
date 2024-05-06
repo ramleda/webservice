@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3200;
 app.use(express.json());
 app.use('/api/movies', shearchMoviesRoutes);
 
-console.log(PORT);
+console.log('PORT: ' + PORT);
 
 app.listen(PORT, () => {
     console.log(`Server working on http://localhost:${PORT}`);

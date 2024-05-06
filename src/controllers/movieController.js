@@ -8,7 +8,8 @@ Class Name      : movieController.js
 //import axios object and define the token and url for TMDB
 const axios = require('axios');
 
-const API_TOKEN = process.env.TMDB_API_TOKEN;
+const API_TOKEN = process.env.TMDB_API_TOKEN || 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYWYzNjE1NTE5MTRlNTc4YmMwMDQ5NDRkNTRlYmQ4MyIsInN1YiI6IjY2MzkzZDJkODEzY2I2MDEyMTg5YjNkOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Ik9dphMO37gsbMhI1B74O54XADnTx7myuXDfz7cOJlg';
+console.log('TOKEN: ' + API_TOKEN)
 const BASE_URL = 'https://api.themoviedb.org/3';
 
 //Create API for search movies
