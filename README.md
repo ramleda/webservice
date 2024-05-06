@@ -17,3 +17,9 @@ This is an application using Node.JS to get movies informations by search from T
    ```bash
    git clone git@github.com:ramleda/webservice.git
    cd webservice
+
+2. ** Running the application ** 
+   ```bash
+   node src/app.js
+   The application runs on PORT 3200:
+   http://localhost:3200/api/movies/search?query=matrix
