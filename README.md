@@ -25,5 +25,5 @@ This is an application using Node.JS to get movies informations by search from T
 3. ** Acessing the API ** 
    
    ```bash
-   on navigator type:
+   on browser type:
    http://localhost:3200/api/movies/search?query=matrix
