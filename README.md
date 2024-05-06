@@ -14,3 +14,6 @@ This is an application using Node.JS to get movies informations by search from T
 
 1. ** Clone the repository:**
 
+   ```bash
+   git clone git@github.com:ramleda/webservice.git
+   cd webservice
