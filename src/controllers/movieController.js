@@ -32,7 +32,16 @@ exports.searchMovies = async (req, res) =>{
                 'Authorization': `Bearer ${API_TOKEN}`
             }
         });
-        res.json(response.data);
+
+        //Display on OIT defined test format
+        const movies = response.data.results.slice(0, 10).map(movie => ({
+            movie_id: movie.id,
+            title: movie.title,
+            poster_image_url: `https://image.tmdb.org/t/p/w500${movie.poster_path}`,
+            popularity_summary: `${movie.popularity} out of ${movie.vote_count}`
+        }));
+
+        res.json(movies);
     }
     catch(error){
         res.status(500).json({ message: 'Error trying to get data from TMDb', error: error.message });
