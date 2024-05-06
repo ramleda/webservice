@@ -1,4 +1,4 @@
-# Movie Search Application - OIT Job test
+# Movie Search Application - OIT test
 
 This is an application using Node.JS to get movies informations by search from The Movie Database
 
