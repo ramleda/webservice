@@ -21,5 +21,9 @@ This is an application using Node.JS to get movies informations by search from T
 2. ** Running the application ** 
    ```bash
    node src/app.js
-   The application runs on PORT 3200:
+
+3. ** Acessing the API ** 
+   
+   ```bash
+   on navigator type:
    http://localhost:3200/api/movies/search?query=matrix
